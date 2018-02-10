@@ -21,6 +21,7 @@ Bayerische[nr]? Hof|Walds?
 (Bekennend|Evangelisch|Katholisch)en? Kirche
 Blaue[nr]? Reiters?|Band(s|es)?|Planet(en)?|Brief[es]?|Moschee|Enzians?
 Bögen
+Botanische[rn]? Gartens?
 Braune[rn]? Zwerge?s?
 Britischen? Inseln
 Bundeskanzlers? Kurz
@@ -54,13 +55,14 @@ Eisernen? Kreuze|Vorhangs?
 Erste[rn]? Mai|Liga
 Erste[rnm]? Weltkriege?s?
 Essener
-Europäischen? Fonds|(Atomg|G)emeinschaft|Parlamente?s?|Union|Gerichtshof(es|s)?|Patentamt(es|s)?|Wirtschaftsgemeinschaft|Kommission|Rat(es|s)?|Zentralbank|Menschenrechtskonvention|Agentur|Arzneimittel-?[aA]gentur|Volkspartei
+Europäischen? Fonds|(Atomg|G)emeinschaft|Parlamente?s?|Union|Gerichtshof(es|s)?|Patentamt(es|s)?|Wirtschaftsgemeinschaft|Kommission|Rat(es|s)?|Zentralbank|Menschenrechtskonvention|Agentur|Arzneimittel-?[aA]gentur|Volkspartei|Haftbefehls?|Kulturhauptstadt
 Ewige[rn]? Stadt
 Fast Food
 Ferne[rn]? Ostens?
 Fleißige[ns]? Lieschens?
 Französischen? Revolution
 Freien? Universität
+Fränkische[nr]? Schweiz
 Geheimen? Staatspolizei
 Gelben? Karten?|Trikots?|Rüben?|Meer(e?s)?
 Gelbe[nr]? Fluss(es)?|Engel[ns]?|Seiten?|Sacks?
@@ -82,7 +84,7 @@ Großen Bären|Kurfürsten|Teiche?s|Wagens
 Großer? Bär|Kurfürst|Teich
 Große[ns]? (Bundesv|V)erdienstkreuz
 Großen (Bundesv|V)erdienstkreuzes
-Groß und Klein
+Groß (und|&) Klein
 Großwild
 Grüne[rn] Punkts?|Woche
 Grüne[mnrs]? Veltliners?
@@ -106,6 +108,7 @@ Indischen Ozeans
 Indische[nr]? Ozean
 Inneren? Medizin|Gürtel|Mongolei
 Inoffizielle[rn]? Mitarbeiter[sn]?
+International Airlines
 Internationalen? Filmfestspielen?|Atomenergie(-Organisation|behörde|organisation)|Fernmeldeunion|Komitees?|.*tag|Raumstation
 Internationale[mnr]? Währungsfonds|(Seeg|Strafg|Sportg|Militärg|G)erichtshof(e?s)?
 Internationale[ns]? Olympische[ns]? Komitees?
@@ -175,7 +178,7 @@ Roten Planeten
 Runder Tisch
 Russischen? Föderation|Revolution
 (Großdeutsch|Russisch|Tausendjährig)e[ns]? Reiche?s?
-(Sächsische|Fränkische)[nr]? Schweiz
+Sächsische[nr]? Schweiz|Staats.+
 Sanitär
 Schwäbisch Halls?
 Schwarzer? Bretter|Löcher|Körper|Kontinent|Witwe
@@ -185,6 +188,7 @@ Seiner? Exzellenz
 .+ischen? Akademie der
 Seltene[nr]? Erden
 Single Malt
+Smart Cit(y|ies)
 Sozialistischen? Sowjetrepublik(en)?|(Einheits)?[pP]artei
 Spanischen? Grippe|Erbfolgekriegs?|Bürgerkriegs?|Niederlanden?|Treppe|Fliege|Reitschule
 Staatlichen? Universität

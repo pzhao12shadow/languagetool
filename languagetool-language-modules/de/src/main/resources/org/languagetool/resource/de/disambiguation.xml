@@ -702,14 +702,30 @@ Copyright © 2013 Markus Brenneis, Daniel Naber, Jan Schreiber
             <example type="ambiguous" inputform="um[um/ADV:TMP+MOD,um/KON:INF,um/KON:PRI,um/PRP:LOK+TMP+CAU:AKK,um/ZUS]" outputform="um[um/KON:INF]">Sie tat dies, <marker>um</marker> seine Freilassung sicherzustellen.</example>
         </rule>
     </rulegroup>
-
+    <rule name="WORKAROUND_GH_635" id="WORKAROUND_GH_635">
+        <pattern case_sensitive="yes">
+            <marker>
+                <token>-</token>
+            </marker>
+        </pattern>
+        <disambig action="remove" postag=".+"/>
+    </rule>
+    <rule name="FIDEL" id="FIDEL">
+        <pattern case_sensitive="yes">
+            <marker>
+                <token>Fidel</token>
+            </marker>
+            <token regexp="yes">Castros?</token>
+        </pattern>
+        <disambig action="remove" postag=".+:FEM"/>
+    </rule>
     <!-- ============================================================================================================== -->
     <!-- IGNORE SPELLING -->
 
     <rule name="en vogue" id="EN_VOGUE">
         <pattern>
             <token>en</token>
-            <token regexp="yes">vogue|gros|masse|passant|détail|suite</token>
+            <token regexp="yes">bloc|vogue|gros|masse|miniature|passant|détail|suite</token>
         </pattern>
         <disambig action="ignore_spelling"/>
     </rule>
@@ -752,7 +768,7 @@ Copyright © 2013 Markus Brenneis, Daniel Naber, Jan Schreiber
     <rule name="Crème fraîche/brûlée" id="CREME_FRAICHE">
         <pattern case_sensitive="yes">
             <token>Crème</token>
-            <token regexp="yes">brûlée|fraîche</token>
+            <token regexp="yes">br[ûu]lée|Caramel|double|fraîche</token>
         </pattern>
         <disambig action="ignore_spelling"/>
     </rule>
@@ -909,6 +925,13 @@ Copyright © 2013 Markus Brenneis, Daniel Naber, Jan Schreiber
         <pattern>
             <token>Sauce</token>
             <token regexp='yes'>hollandaise|béarnaise|bordelaise|Bolognese|Béchamel|tartare</token>
+        </pattern>
+        <disambig action="ignore_spelling"/>
+    </rule>
+    <rule name="Casus" id="CASUS">
+        <pattern>
+            <token>Casus</token>
+            <token regexp='yes'>Belli|Foederis|knacksus|obliquus|rectus</token>
         </pattern>
         <disambig action="ignore_spelling"/>
     </rule>
@@ -2608,6 +2631,14 @@ Copyright © 2013 Markus Brenneis, Daniel Naber, Jan Schreiber
         <token>Fleur</token>
         <token>de</token>
         <token>Sel</token>
+      </pattern>
+      <disambig action="ignore_spelling"/>
+    </rule>
+    <rule name="Abkürzungen" id="UPPERCASE_ABBREVIATIONS">
+      <pattern case_sensitive="yes">
+        <token>(</token>
+        <token spacebefore="no" regexp="yes">[A-Z]{2,3}</token>
+        <token spacebefore="no">)</token>
       </pattern>
       <disambig action="ignore_spelling"/>
     </rule>

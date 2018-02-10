@@ -7721,3 +7721,9 @@ unfern	unfern	PRP:LOK:GEN
 ungerechnet	ungeechnet	PRP:MOD:GEN
 rücksichtlich	rücksichtlich	PRP:MOD:GEN
 beidseits	beidseits	PRP:LOK:GEN
+Silo	Silo	SUB:AKK:SIN:MAS
+Silo	Silo	SUB:DAT:SIN:MAS
+Silo	Silo	SUB:NOM:SIN:MAS
+RTL	RTL	SUB:AKK:SIN:MAS
+RTL	RTL	SUB:DAT:SIN:MAS
+RTL	RTL	SUB:NOM:SIN:MAS

@@ -4059,6 +4059,20 @@ title="Easy editing stylesheet" ?>
       <example correction="onde">Diga-me <marker>aonde</marker> está o livro.</example>
     </rule>
 
+    <rule id='AS_OSSADAS_DE' name="A ossada de">
+    <!--      Created by Marco A.G.Pinto, Portuguese rule      -->
+      <pattern>
+        <marker>
+          <token>as</token>
+		  <token>ossadas</token>
+        </marker>
+		<token>de</token>
+      </pattern>
+      <message>Esta palavra é referida no singular se só descreve um indivíduo.</message>
+        <suggestion><match no='1' regexp_match='(.+)s$' regexp_replace='$1'/> <match no='2' regexp_match='(.+)s$' regexp_replace='$1'/></suggestion>
+      <example correction="a ossada">A polícia encontrou <marker>as ossadas</marker> de Pedro.</example>
+    </rule>	
+	
     <rule id='CAIXA_COM_FÓSFOROS' name="Caixa de fósforos">
     <!--      Created by Marco A.G.Pinto, Portuguese rule      -->
       <pattern>
@@ -5525,6 +5539,19 @@ title="Easy editing stylesheet" ?>
       <example correction="te dê">Talvez <marker>te de</marker> mais novidades.</example>
     </rule>
 
+    <rule id='TEM_TÊM' name="Confusão: tem - têm">
+	<!-- Created by Marco A.G. Pinto, Portuguese rule -->
+      <pattern>
+          <token regexp='yes'>uns|umas|outros|outras|alguns|algumas</token>
+		  <token min='0'>não</token>
+		  <marker>
+			<token>tem</token>
+		  </marker>
+      </pattern>
+      <message>Substitua por <suggestion>têm</suggestion>.</message>
+      <example correction="têm">Uns <marker>tem</marker> sorte no jogo.</example>
+    </rule>	
+	
     <!-- TOMARÁ LUGAR terá lugar -->
     <rule id='TOMARÁ_LUGAR' name="Terá lugar">
       <pattern>
@@ -5760,7 +5787,7 @@ title="Easy editing stylesheet" ?>
           <token/>
           <token regexp='yes'>antes|apesar|capacidade|depois|expec?tativas?|facto|possibilidade|risco|intenção</token>
           <token skip='-1' regexp='yes'>d[ao]s?
-            <exception scope='next' postag='_PUNCT' postag_regexp='yes'/></token>
+            <exception scope='next' postag='_PUNCT'/></token>
         </marker>
           <token postag_regexp='yes' postag='V.+'/>
       </pattern>
@@ -5828,8 +5855,8 @@ title="Easy editing stylesheet" ?>
       <antipattern>
           <token regexp='yes'>antes|apesar|capacidade|depois|expec?tativas?|facto|objec?tivo|possibilidade|risco|intenção</token>
           <token skip='-1'>de
-            <exception scope='next' postag='_PUNCT' postag_regexp='yes'/></token>
-          <token postag_regexp='yes' postag='V.+'/>
+            <exception scope='next' postag='_PUNCT'/></token>
+          <token postag='VMN0000'/>
       </antipattern>
       <antipattern>
           <token regexp='yes'>aos?</token>
@@ -5974,8 +6001,8 @@ title="Easy editing stylesheet" ?>
       <antipattern>
           <token regexp='yes'>antes|apesar|capacidade|depois|expec?tativas?|facto|objec?tivo|possibilidade|risco|intenção</token>
           <token skip='-1'>de
-            <exception scope='next' postag='_PUNCT' postag_regexp='yes'/></token>
-          <token postag_regexp='yes' postag='V.+'/>
+            <exception scope='next' postag='_PUNCT'/></token>
+          <token postag='VMN0000'/>
       </antipattern>
       <antipattern>
           <token regexp='yes'>aos?</token>
@@ -6011,8 +6038,8 @@ title="Easy editing stylesheet" ?>
       <antipattern>
           <token regexp='yes'>antes|apesar|capacidade|depois|expec?tativas?|facto|objec?tivo|possibilidade|risco|intenção</token>
           <token skip='-1'>de
-            <exception scope='next' postag='_PUNCT' postag_regexp='yes'/></token>
-          <token postag_regexp='yes' postag='V.+'/>
+            <exception scope='next' postag='_PUNCT'/></token>
+          <token postag='VMN0000'/>
       </antipattern>
       <antipattern>
           <token regexp='yes'>aos?</token>
@@ -6043,8 +6070,8 @@ title="Easy editing stylesheet" ?>
       <antipattern>
           <token regexp='yes'>antes|apesar|capacidade|depois|expec?tativas?|facto|objec?tivo|possibilidade|risco|intenção</token>
           <token skip='-1'>de
-            <exception scope='next' postag='_PUNCT' postag_regexp='yes'/></token>
-          <token postag_regexp='yes' postag='V.+'/>
+            <exception scope='next' postag='_PUNCT'/></token>
+          <token postag='VMN0000'/>
       </antipattern>
       <antipattern>
           <token regexp='yes'>aos?</token>
@@ -6089,8 +6116,8 @@ title="Easy editing stylesheet" ?>
       <antipattern>
           <token regexp='yes'>antes|apesar|capacidade|depois|expec?tativas?|facto|objec?tivo|possibilidade|risco|intenção</token>
           <token skip='-1'>de
-            <exception scope='next' postag='_PUNCT' postag_regexp='yes'/></token>
-          <token postag_regexp='yes' postag='V.+'/>
+            <exception scope='next' postag='_PUNCT'/></token>
+          <token postag='VMN0000'/>
       </antipattern>
       <antipattern>
           <token regexp='yes'>aos?</token>
@@ -6125,8 +6152,8 @@ title="Easy editing stylesheet" ?>
       <antipattern>
           <token regexp='yes'>antes|apesar|capacidade|depois|expec?tativas?|facto|objec?tivo|possibilidade|risco|intenção</token>
           <token skip='-1'>de
-            <exception scope='next' postag='_PUNCT' postag_regexp='yes'/></token>
-          <token postag_regexp='yes' postag='V.+'/>
+            <exception scope='next' postag='_PUNCT'/></token>
+          <token postag='VMN0000'/>
       </antipattern>
       <antipattern>
           <token regexp='yes'>aos?</token>
